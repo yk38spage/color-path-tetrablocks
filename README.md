@@ -65,9 +65,9 @@ The game features responsive keyboard controls handled via a `KeyAdapter`.
 
 * **`Color_path_tetrablocks.java`**: The entry point. It sets up the `JFrame` and uses a `CardLayout` to switch between the **Main Menu** and the **Game Instance**.
 * **`TetrablocksGame.java`**: The core engine. It manages:
-* **Game Loop:** Uses `javax.swing.Timer` to handle gravity ticks.
-* **Rendering:** Custom painting in `BoardPanel` (grid) and `SidePanel` (UI/Stats).
-* **Logic:** Collision detection (`tryMove`), line clearing (`removeLines`), and pathfinding (`checkConnectedColorPath`).
+ * **Game Loop:** Uses `javax.swing.Timer` to handle gravity ticks.
+ * **Rendering:** Custom painting in `BoardPanel` (grid) and `SidePanel` (UI/Stats).
+ * **Logic:** Collision detection (`tryMove`), line clearing (`removeLines`), and pathfinding (`checkConnectedColorPath`).
 
 
 ## 5. How to Run and Build
@@ -115,3 +115,4 @@ This project is licensed under the **GNU General Public License v3.0 (GPLv3).
 
 
 For the conditions of the license, please see the [LICENSE](./LICENSE) file in the project repository or visit [gnu.org/licenses/gpl-3.0](https://www.gnu.org/licenses/gpl-3.0).
+
