@@ -69,38 +69,49 @@ The game features responsive keyboard controls handled via a `KeyAdapter`.
 * **Rendering:** Custom painting in `BoardPanel` (grid) and `SidePanel` (UI/Stats).
 * **Logic:** Collision detection (`tryMove`), line clearing (`removeLines`), and pathfinding (`checkConnectedColorPath`).
 
-## 5. How to Build and Run
 
-Since this is a Maven project, you can easily build it into an executable JAR file.
+## 5. How to Run and Build
 
-### Prerequisites
+### 5.1. Quick Start (Pre-built)
 
-* Java Development Kit (JDK) 21 installed.
-* Maven installed (or use your IDE's built-in Maven).
+An executable JAR file is already provided in the `target` folder. You do not need to compile the code yourself to play the game.
 
-### Step 1: Build the JAR
+**To run the game immediately:**
 
-Open your terminal in the project root directory (where `pom.xml` is located) and run:
-
+1. Navigate to the `target` folder.
+2. Open your terminal or command prompt in this location.
+3. Run the following command:
 ```bash
-mvn clean package
-
+java -jar color_path_tetrablocks-1.0-SNAPSHOT.jar
 ```
 
-* **clean:** Removes old build files.
-* **package:** Compiles code and generates the JAR file in the `target` folder.
+### 5.2. Build from Source (Optional)
 
-### Step 2: Run the Game
+If you wish to modify the code or rebuild the project from scratch, follow these steps:
 
-Navigate to the `target` directory and execute the generated JAR file:
+**Prerequisites:**
 
+* Java Development Kit (JDK) 21 installed.
+* Maven installed.
+
+**Build Instructions:**
+
+1. Open your terminal in the project root directory (where `pom.xml` is located).
+2. Run the following command to clean and package the project:
+```bash
+mvn clean package
+```
+
+3. Once the build is successful, a new executable JAR will be generated in the `target` folder.
 ```bash
 cd target
 java -jar color_path_tetrablocks-1.0-SNAPSHOT.jar
 ```
 
+
 ## 6. Licence
 
 This project is licensed under the **GNU General Public License v3.0 (GPLv3).
+
 
 For the conditions of the license, please see the [LICENSE](./LICENSE) file in the project repository or visit [gnu.org/licenses/gpl-3.0](https://www.gnu.org/licenses/gpl-3.0).
